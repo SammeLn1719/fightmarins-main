@@ -1,0 +1,56 @@
+.form{
+    background-color: #437563;
+    color: #FFF;
+    &__row{
+		display: block;
+		& p{
+            text-align: center;
+            margin: 24px;
+        }
+	}
+    &__name{
+        text-align: center;
+        padding: 24px;
+    }
+    &__wild{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 654px) {
+            flex-wrap: wrap;
+        }
+        & img{
+            max-width: 300px;
+            @media screen and (max-width: 938px) {
+                max-width: 250px;
+            }
+            @media screen and (max-width: 800px) {
+                max-width: 200px;
+            }
+        }
+    }
+}
+form {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.wildberries{
+    &-img{
+        width: 547px;
+        margin: 24px auto;
+        @media screen and (max-width: 592px) {
+            width: 200px;
+        }
+    }
+}
+input, textarea, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.privacy-policy{
+    text-align: center;
+    padding-bottom: 24px;
+}

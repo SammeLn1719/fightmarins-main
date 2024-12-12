@@ -1,0 +1,152 @@
+.aboutus{
+    &__header{
+        text-align: center;
+        padding: 24px;
+    } 
+    &__text{
+        padding: 24px;
+    }
+    
+}
+.aboutus-container {
+    position: relative;
+    height: 780px;
+    margin: auto;
+    @media screen and (max-width: 972px) {
+        height: 632px;
+    }
+    @media screen and (max-width: 765px) {
+        height: 469px;
+    }
+    @media screen and (max-width: 452px) {
+
+            height: 714px;
+        
+    }
+  }
+.imagea {
+    position: absolute;
+    height: auto;
+}
+
+.image10 {
+    top: 0px;
+    left: 0px;
+    z-index: 2; /* На переднем плане */
+    width: 540px;
+    height: auto;
+    @media screen and (max-width: 1205px) {
+        top: 0px;
+        left: 0px;
+    }
+    @media screen and (max-width: 1124px) {
+        width: 400px;
+    }
+    @media screen and (max-width: 972px) {
+        top: 0px;
+        left: 0px;
+    }
+    @media screen and (max-width: 865px) {
+        top: 0px;
+        left: 0px;
+        width: 350px;
+    }
+    @media screen and (max-width: 765px) {
+        top: 0px;
+        left: 0px;
+        width: 300px;
+    }
+    @media screen and (max-width: 642px) {
+        top: 0px;
+        left: 0px;
+        width: 200px;
+    }
+    @media screen and (max-width: 642px) {
+        
+    
+    }
+    @media screen and (max-width: 452px) {
+
+    }
+  }
+
+  .image11 {
+    top: 0px;
+    left:610px;
+    z-index: 2; /* На переднем плане */
+    width: 540px;
+    height: auto;
+    @media screen and (max-width: 1205px) {
+        left: 539px;
+        
+    }
+    @media screen and (max-width: 1124px) {
+
+        width: 400px;
+    }
+    @media screen and (max-width: 972px) {
+        left: 417px;
+        // width: 250px;
+    }
+    @media screen and (max-width: 865px) {
+        left: 349px;
+        width: 358px;
+       
+    }
+    @media screen and (max-width: 765px) {
+        left: 299px;
+        width: 300px;
+    }
+    @media screen and (max-width: 642px) {
+        
+        width: 200px;
+    }
+    @media screen and (max-width: 642px) {
+        left: 200px;  
+    }
+    @media screen and (max-width: 452px) {
+        left: 0px; 
+        top: 236px;
+    }
+  }
+  .image12 {
+    top: 236px;
+    left: 290px;
+    z-index: 2; /* На переднем плане */
+    width: 540px;
+    height: auto;
+    @media screen and (max-width: 1205px) {
+        top: 362px;
+        left: 319px;
+        width: 407px;
+    }
+    @media screen and (max-width: 1124px) {
+        
+    }
+    @media screen and (max-width: 972px) {
+        left: 277px;
+        width: 250px;
+    }
+    @media screen and (max-width: 865px) {
+        left: 221px;
+        width: 230px;
+    }
+    @media screen and (max-width: 765px) {
+        top: 306px;
+        left: 223px;
+        width: 150px;
+    }
+    @media screen and (max-width: 642px) {
+        
+        width: 150px;
+    }
+    @media screen and (max-width: 642px) {
+        top: 199px;
+        left: 132px;
+    }
+    @media screen and (max-width: 452px) {
+        top: 505px;
+        left: 0px;
+        width: 200px;
+    }
+  }

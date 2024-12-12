@@ -1,0 +1,34 @@
+.egg {
+    padding: 50px 0;
+
+    &__row {
+        display: flex;
+		justify-content: space-between;
+        @media screen and (max-width: 776px) {
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 476px) {
+            display: block;
+        }
+        
+        & div{
+            width: 33%;
+            margin: 10px;
+            @media screen and (max-width: 776px) {
+                width: 40%;
+            }
+            @media screen and (max-width: 476px) {
+                font-size: 16px;
+                width: 100%;
+                text-align: center;
+                margin: 15px;
+            }
+
+        }
+    }
+    &__name {
+        padding-bottom: 24px;
+        
+    }
+    
+}

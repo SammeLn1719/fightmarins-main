@@ -1,0 +1,28 @@
+.footer {
+	// background: #E9E4DC;
+	padding: 50px 0;
+	font-size: 32px;
+    color: #393C41;
+	font-size: 16px !important;
+
+	h1 {
+		font-size: 32px;
+	}
+	&__row{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media screen and (max-width: 648px) {
+			width: 100%;
+			text-align: center;
+			display: block;
+			& div{
+				margin: 24px 0;
+			}
+		}
+	}
+	
+	@media screen and (max-width: 1200px) {
+		font-size: 26px;
+	}
+}

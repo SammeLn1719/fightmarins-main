@@ -1,0 +1,26 @@
+.offer {
+    background-color:#437563;
+    padding: 50px 0;
+    & h3{
+        text-align: center ;
+        color: #FFF;
+        font-style: italic;
+        font-weight: 200;
+    }
+    & li{
+        text-align: center ;
+        padding: 18px;
+        color: #FFF;
+    }
+    &__row {
+        @media screen and (max-width: 390px) {
+			font-size: 18px;
+		}
+        
+    }
+    &__name {
+        padding-bottom: 24px;
+        
+    }
+    
+}
