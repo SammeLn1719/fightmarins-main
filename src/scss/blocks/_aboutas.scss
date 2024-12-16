@@ -66,7 +66,10 @@
     
     }
     @media screen and (max-width: 452px) {
-
+        left: 25%;
+    }
+    @media screen and (max-width: 310px) {
+        left: 5%;
     }
   }
 
@@ -105,8 +108,15 @@
         left: 200px;  
     }
     @media screen and (max-width: 452px) {
-        left: 0px; 
+        left: 25%;
         top: 236px;
+    }
+    @media screen and (max-width: 452px) {
+        left: 25%;
+        top: 236px;
+    }
+    @media screen and (max-width: 310px) {
+        left: 5%;
     }
   }
   .image12 {
@@ -146,7 +156,12 @@
     }
     @media screen and (max-width: 452px) {
         top: 505px;
-        left: 0px;
+        left: 25%;
+        width: 200px;
+    }
+    @media screen and (max-width: 310px) {
+        top: 505px;
+        left: 5%;
         width: 200px;
     }
   }
