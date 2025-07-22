@@ -1,0 +1,19 @@
+<section class="callback-section" id="callback-section">
+  <div class="container">
+    <h2 class="callback-section__title">Остались вопросы?</h2>
+    <p class="callback-section__desc">Оставьте свой номер — мы перезвоним и проконсультируем!</p>
+    <form class="callback-section__form">
+      <input type="text" name="name" placeholder="Ваше имя" required class="callback-section__input">
+      <input type="tel" name="phone" placeholder="Телефон" required class="callback-section__input">
+      <button type="submit" class="callback-section__btn btn btn-primary">Жду звонка!</button>
+    </form>
+    <div class="callback-section__info">Мы не передаем ваши данные третьим лицам.</div>
+  </div>
+</section>
+<script>
+document.querySelector('.callback-section__form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Спасибо! Мы скоро вам перезвоним.');
+  this.reset();
+});
+</script> 

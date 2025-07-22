@@ -1,0 +1,44 @@
+<section class="hero-carousel">
+  <div class="splide" id="main-carousel">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="img/header2.png" alt="Текстиль для дома">
+          <div class="hero-carousel__caption">
+            <h1>Текстиль для дома и уюта</h1>
+            <p>Полотенца, тюль, постельное белье, женская одежда</p>
+            <a href="#products" class="btn btn-primary">Смотреть каталог</a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img src="img/header3.png" alt="Подарки и уют">
+          <div class="hero-carousel__caption">
+            <h1>Лучшие подарки для близких</h1>
+            <p>Яркие коллекции и выгодные цены</p>
+            <a href="#form" class="btn btn-secondary">Заказать</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.Splide) {
+    new Splide('#main-carousel', {
+      type: 'loop',
+      autoplay: true,
+      interval: 4000,
+      pauseOnHover: true,
+      arrows: true,
+      pagination: true,
+      cover: true,
+      heightRatio: 0.5,
+      breakpoints: {
+        768: { heightRatio: 0.7 },
+        480: { heightRatio: 1 }
+      }
+    }).mount();
+  }
+});
+</script> 

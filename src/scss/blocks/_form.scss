@@ -54,3 +54,100 @@ input, textarea, button {
     text-align: center;
     padding-bottom: 24px;
 }
+.order-form, .callback-section {
+  background: var(--abstract1);
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(123,182,234,0.07);
+  padding: 2.5rem 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-main);
+}
+.order-form__title, .callback-section__title {
+  color: var(--primary);
+  font-family: var(--font-accent);
+  margin-bottom: 1.2rem;
+}
+.order-form__input, .callback-section__input, .callback-modal__input {
+  width: 100%;
+  padding: 0.8em 1em;
+  margin-bottom: 1rem;
+  border: 1px solid #b3d8f7;
+  border-radius: 16px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+}
+.order-form__input:focus, .callback-section__input:focus, .callback-modal__input:focus {
+  border: 1.5px solid var(--accent);
+  outline: none;
+}
+.order-form__btn, .callback-section__btn, .callback-modal__btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 24px;
+  padding: 0.7em 2em;
+  font-size: 1.1rem;
+  font-family: var(--font-main);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(123,182,234,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.order-form__btn:hover, .callback-section__btn:hover, .callback-modal__btn:hover {
+  background: var(--accent);
+  box-shadow: 0 4px 16px rgba(123,182,234,0.15);
+}
+.callback-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(36, 57, 93, 0.18);
+  align-items: center;
+  justify-content: center;
+}
+.callback-modal__content {
+  background: var(--page-bg);
+  border-radius: 32px;
+  box-shadow: 0 8px 48px rgba(123,182,234,0.13);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 90vw;
+  position: relative;
+  text-align: center;
+}
+.callback-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+// Абстрактный SVG фон для форм
+.order-form::before, .callback-section::before {
+  content: '';
+  position: absolute;
+  left: -60px; top: -60px;
+  width: 220px; height: 220px;
+  background: url('data:image/svg+xml;utf8,<svg width="220" height="220" xmlns="http://www.w3.org/2000/svg"><circle cx="110" cy="110" r="110" fill="%23b3d8f7"/><ellipse cx="110" cy="110" rx="80" ry="40" fill="%237bb6ea" fill-opacity="0.13"/></svg>') no-repeat;
+  z-index: 0;
+  opacity: 0.7;
+}
+.order-form::after, .callback-section::after {
+  content: '';
+  position: absolute;
+  right: -40px; bottom: -40px;
+  width: 120px; height: 120px;
+  background: url('data:image/svg+xml;utf8,<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" rx="60" fill="%23eaf6fb"/><ellipse cx="60" cy="60" rx="40" ry="20" fill="%237bb6ea" fill-opacity="0.13"/></svg>') no-repeat;
+  z-index: 0;
+  opacity: 0.6;
+}
+.order-form__fields, .callback-section__form {
+  position: relative;
+  z-index: 1;
+}

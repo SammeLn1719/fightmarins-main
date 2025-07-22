@@ -1,0 +1,31 @@
+<div class="callback-modal" id="callback-modal">
+  <div class="callback-modal__content">
+    <button class="callback-modal__close" id="close-callback-modal" aria-label="Закрыть">&times;</button>
+    <h2>Обратный звонок</h2>
+    <form class="callback-modal__form">
+      <input type="text" name="name" placeholder="Ваше имя" required class="callback-modal__input">
+      <input type="tel" name="phone" placeholder="Телефон" required class="callback-modal__input">
+      <button type="submit" class="callback-modal__btn btn btn-primary">Жду звонка!</button>
+    </form>
+    <div class="callback-modal__info">Мы перезвоним вам в ближайшее время.</div>
+  </div>
+</div>
+<script>
+document.getElementById('open-callback-modal')?.addEventListener('click', function() {
+  document.getElementById('callback-modal').style.display = 'flex';
+});
+document.getElementById('close-callback-modal')?.addEventListener('click', function() {
+  document.getElementById('callback-modal').style.display = 'none';
+});
+document.querySelector('.callback-modal__form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Спасибо! Мы скоро вам перезвоним.');
+  document.getElementById('callback-modal').style.display = 'none';
+  this.reset();
+});
+window.addEventListener('click', function(e) {
+  if (e.target === document.getElementById('callback-modal')) {
+    document.getElementById('callback-modal').style.display = 'none';
+  }
+});
+</script> 

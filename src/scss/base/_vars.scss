@@ -2,12 +2,19 @@
 	--container-width: 1200px;
 	--container-padding: 15px;
 
-	--font-main: 'Poppins', sans-serif;
-	--font-accent: 'Playfair Display', serif;
+	--font-main: 'Inter', 'Arial', sans-serif;
+	--font-accent: 'Inter', 'Arial', sans-serif;
 
-	--page-bg: #fff;
-	--text-color: #000;
-	--accent: #ac182c;
+	--page-bg: #eaf6fb;
+	--text-color: #23395d;
+	--accent: #7bb6ea;
+	--primary: #4a90e2;
+	--secondary: #b3d8f7;
+	--abstract1: #eaf6fb;
+	--abstract2: #b3d8f7;
+	--abstract3: #eaf6fb;
+	--button-bg: var(--primary);
+	--button-text: #fff;
 
     --laptop-size: 1199px;
 	--tablet-size: 959px;
@@ -15,6 +22,9 @@
 }
 
 .dark {
-    --page-bg: #252526;
+    --page-bg: #23395d;
     --text-color: #fff;
+    --accent: #7bb6ea;
+    --primary: #4a90e2;
+    --secondary: #b3d8f7;
 }

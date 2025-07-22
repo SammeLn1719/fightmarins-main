@@ -1,34 +1,26 @@
 .egg {
-    padding: 50px 0;
-
-    &__row {
-        display: flex;
-		justify-content: space-between;
-        @media screen and (max-width: 776px) {
-            flex-wrap: wrap;
-        }
-        @media screen and (max-width: 476px) {
-            display: block;
-        }
-        
-        & div{
-            width: 33%;
-            margin: 10px;
-            @media screen and (max-width: 776px) {
-                width: 40%;
-            }
-            @media screen and (max-width: 476px) {
-                font-size: 16px;
-                width: 100%;
-                text-align: center;
-                margin: 15px;
-            }
-
-        }
-    }
-    &__name {
-        padding-bottom: 24px;
-        
-    }
-    
+  background: var(--abstract2);
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(123,182,234,0.07);
+  padding: 2.5rem 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-main);
+}
+.egg__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.egg__name {
+  color: var(--primary);
+  font-family: var(--font-accent);
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+.egg__row p {
+  color: var(--text-color);
+  font-size: 1rem;
+  opacity: 0.85;
 }

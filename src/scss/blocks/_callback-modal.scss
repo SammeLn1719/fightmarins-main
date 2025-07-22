@@ -1,0 +1,46 @@
+.callback-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(36, 57, 93, 0.18);
+  align-items: center;
+  justify-content: center;
+}
+.callback-modal[style*="display: flex"] {
+  display: flex !important;
+}
+.callback-modal__content {
+  background: var(--page-bg);
+  border-radius: 32px;
+  box-shadow: 0 8px 48px rgba(123,182,234,0.13);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 90vw;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.callback-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+.callback-modal__content::before {
+  content: '';
+  position: absolute;
+  left: -40px; top: -40px;
+  width: 120px; height: 120px;
+  background: url('data:image/svg+xml;utf8,<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg"><circle cx="60" cy="60" r="60" fill="%23b3d8f7"/><ellipse cx="60" cy="60" rx="40" ry="20" fill="%237bb6ea" fill-opacity="0.13"/></svg>') no-repeat;
+  z-index: 0;
+  opacity: 0.7;
+}
+.callback-modal__form, .callback-modal__info {
+  position: relative;
+  z-index: 1;
+} 

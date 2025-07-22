@@ -1,18 +1,23 @@
-<div class="form" id="form">
-    <div class="container">
-        <div class="form__row">
-            <h4 class="form__name">Магазин <a href="https://www.wildberries.by/seller/3943921">MORIMA</a> ООО "ТДМ ГЛОБАЛ"<br>это</h4>
-            <div class="form__wild">
-                <img src="img/prod9.png" alt="">
-                <img src="img/prod10.png" alt="">
-                <img src="img/prod11.png" alt="">
-            </div>
-            <p>Больше информации и отзывов о товарах смотрите в магазине</p>
-            <div class="wildberries">
-                <div class="wildberries-img">
-                    <a href="https://www.wildberries.by/seller/3943921"><img src="img/prod12.png" alt="" ></a>
-                </div>
-            </div>
-        </div>
+<section class="order-form" id="form">
+  <div class="container">
+    <h2 class="order-form__title">Оформить заказ</h2>
+    <form class="order-form__form">
+      <div class="order-form__fields">
+        <input type="text" name="name" placeholder="Ваше имя" required class="order-form__input">
+        <input type="tel" name="phone" placeholder="Телефон" required class="order-form__input">
+        <input type="text" name="product" placeholder="Товар (например: полотенце)" class="order-form__input">
+      </div>
+      <button type="submit" class="order-form__btn btn btn-primary">Заказать</button>
+    </form>
+    <div class="order-form__info">
+      <p>Мы свяжемся с вами для уточнения деталей заказа и доставки.</p>
     </div>
-</div>
+  </div>
+</section>
+<script>
+document.querySelector('.order-form__form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Спасибо за заказ! Мы свяжемся с вами в ближайшее время.');
+  this.reset();
+});
+</script>

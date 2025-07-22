@@ -1,0 +1,44 @@
+.products-short {
+  background: var(--abstract2);
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(123,182,234,0.07);
+  padding: 2.5rem 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-main);
+}
+.products-short__title {
+  color: var(--primary);
+  font-family: var(--font-accent);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.products-short__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.products-short__item {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(123,182,234,0.06);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.products-short__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+.products-short::before {
+  content: '';
+  position: absolute;
+  left: -40px; top: -40px;
+  width: 180px; height: 180px;
+  background: url('data:image/svg+xml;utf8,<svg width="180" height="180" xmlns="http://www.w3.org/2000/svg"><circle cx="90" cy="90" r="90" fill="%23b3d8f7"/><ellipse cx="90" cy="90" rx="60" ry="30" fill="%237bb6ea" fill-opacity="0.10"/></svg>') no-repeat;
+  z-index: 0;
+  opacity: 0.7;
+} 

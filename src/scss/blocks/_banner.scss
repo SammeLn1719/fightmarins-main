@@ -1,106 +1,44 @@
-.banner{
-    
-    &__row{
-        display: flex;
-        @media screen and (max-width: 648px) {
-            display: contents;
-        }
-        & > div{
-            width: 50%;
-            @media screen and (max-width: 648px) {
-                width: 100%;
-            }
-        }
-
-    }
-    &__text{
-        font-size: 32px;
-        padding-top: 24px;
-    }
-    &__iner{
-        padding-top: 24px;
-    }
+.hero-carousel {
+  background: var(--abstract1);
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(123,182,234,0.07);
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-main);
 }
-.img-logo{
-    padding: 72px;
-    @media screen and (max-width: 700px) {
-        padding: 40px;
-    }
+.hero-carousel__caption {
+  position: absolute;
+  left: 8%;
+  top: 18%;
+  color: var(--text-color);
+  background: rgba(234,246,251,0.85);
+  border-radius: 18px;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 12px rgba(123,182,234,0.10);
+  max-width: 420px;
 }
-.nav-a{
-    padding: 10px;
+.hero-carousel__caption h1 {
+  color: var(--primary);
+  font-family: var(--font-accent);
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
 }
-.banner-container {
-    position: relative;
-    height: 538px;
-    margin: auto;
-    @media screen and (max-width: 756px) {
-        height: 448px;
-    }
-    
+.hero-carousel__caption p {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 900px) {
+  .hero-carousel__caption {
+    left: 4%;
+    top: 10%;
+    max-width: 90vw;
+    padding: 1rem 1.2rem;
   }
-  
-  .imageh {
-    height: auto;
+  .hero-carousel__caption h1 {
+    font-size: 1.3rem;
   }
-  
-  .image5 {
-    float: right;
-    /* top: 0px; */
-    /* left: 255px; */
-    width: 72%;
-    // top: 0px;
-    // left: 255px;
-    // width: 100%;
-    // z-index: 2; /* На переднем плане */
-   
-    // height: auto;
-    @media screen and (max-width: 1205px) {
-        // left: 200px;
-        // width: 300px;
-        width: 79%;
-    }
-    @media screen and (max-width: 992px) {
-        left: 120px;
-        width: 300px;
-    }
-    @media screen and (max-width: 860px) {
-        left: 120px;
-        width: 250px;
-    }
-    @media screen and (max-width: 756px) {
-        left: 120px;
-        width: 200px;
-    }
-    @media screen and (max-width: 355px) {
-        left: 80px;
-        width: 150px;
-    }
-  }
-  
-  .image6 {
-    position: absolute;
-    top: 164px;
-    /* left: 100px; */
-    width: 320px;
-    height: auto;
-    @media screen and (max-width: 1205px) {
-        // left: 120px;
-        // width: 300px;
-    }
-    @media screen and (max-width: 992px) {
-        left: 0px;
-        width: 280px;
-    }
-    @media screen and (max-width: 860px) {
-        width: 250px;
-    }
-    @media screen and (max-width: 756px) {
-        width: 200px;
-    }
-    @media screen and (max-width: 355px) {
-       
-        width: 150px;
-    }
-  }
+}
   
